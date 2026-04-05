@@ -1,0 +1,42 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+    padding: 16px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+    padding-top: 75px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 20px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+}

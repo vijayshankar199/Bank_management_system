@@ -1,0 +1,105 @@
+.history {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 40px;
+
+    background: linear-gradient(135deg, #f4f7fb, #e9eef5);
+
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Title */
+.history h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2c3e50;
+
+    text-align: center;
+}
+
+/* Label */
+.history label {
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input */
+.history input {
+    padding: 12px 14px;
+
+    font-size: 15px;
+
+    border-radius: 10px;
+    border: 1px solid #ccd6e0;
+
+    outline: none;
+
+    transition: all 0.2s ease;
+}
+
+/* Focus effect */
+.history input:focus {
+    border-color: #0072ff;
+    box-shadow: 0 0 0 2px rgba(0,114,255,0.15);
+}
+
+/* Message */
+.history p {
+    min-height: 24px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #0072ff;
+
+    background: rgba(0,114,255,0.08);
+
+    padding: 8px 16px;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+/* Button */
+.history button {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 14px 36px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 18px rgba(0,114,255,0.35);
+
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+.history button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0,114,255,0.45);
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .history label {
+        width: 100%;
+    }
+}

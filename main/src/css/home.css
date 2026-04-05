@@ -1,0 +1,84 @@
+.home {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+
+    gap: 22px;
+    padding: 26px;
+
+    background: linear-gradient(135deg, #f4f7fb, #e9eef5);
+
+    border-radius: 18px;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Welcome banner (bigger) */
+.home button:first-child {
+    grid-column: 1 / 3;
+
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: white;
+
+    padding: 22px;
+
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    border-radius: 14px;
+    border: none;
+
+    box-shadow: 0 10px 22px rgba(0, 114, 255, 0.4);
+
+    cursor: default;
+}
+
+/* Action buttons (medium-big) */
+.home button:not(:first-child) {
+    background: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 18px 16px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #2c3e50;
+
+    cursor: pointer;
+
+    box-shadow: 0 6px 14px rgba(0,0,0,0.16);
+
+    transition: all 0.2s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover effect */
+.home button:not(:first-child):hover {
+    background: #0072ff;
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 22px rgba(0,114,255,0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home {
+        grid-template-columns: 1fr;
+    }
+
+    .home button:first-child {
+        grid-column: 1;
+    }
+}

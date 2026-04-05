@@ -1,0 +1,85 @@
+.create {
+    max-width: 700px;
+    margin: 0 auto;
+
+    background: #ffffff;
+    padding: 30px 40px;
+
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Labels */
+.create label {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 13px;
+    font-weight: 600;
+    color: #2c3e50;
+    letter-spacing: 0.5px;
+}
+
+/* Inputs */
+.create input {
+    margin-top: 6px;
+
+    padding: 10px 12px;
+
+    border-radius: 6px;
+    border: 1px solid #ccc;
+
+    font-size: 14px;
+
+    outline: none;
+    transition: all 0.25s ease;
+
+    background: #fafafa;
+}
+
+.create input:focus {
+    border-color: #00c6ff;
+    background: #ffffff;
+    box-shadow: 0 0 0 2px rgba(0, 198, 255, 0.2);
+}
+
+/* Make last date field full width */
+.create label:last-of-type {
+    grid-column: span 2;
+}
+
+/* Button */
+.create button {
+    grid-column: span 2;
+
+    margin-top: 10px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 114, 255, 0.4);
+}
+
+.create button:active {
+    transform: translateY(0);
+}

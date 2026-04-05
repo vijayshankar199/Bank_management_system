@@ -1,0 +1,110 @@
+.replica {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+.replica h1 {
+    grid-column: 1 / -1;   /* full width */
+    margin-bottom: 25px;
+
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+/* Customer card */
+.rep {
+    background: #ffffff;
+
+    padding: 22px 20px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* center horizontally */
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.rep:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Each line */
+.rep p {
+    margin: 6px 0;
+
+    font-size: 14px;
+    color: #2c3e50;
+
+    text-align: center;   /* center text */
+
+    letter-spacing: 0.3px;
+}
+
+/* Make labels stand out */
+.rep p b {
+    font-weight: 600;
+}
+
+.replica input {
+    margin-top: 6px;
+
+    padding: 11px 12px;
+
+    border-radius: 7px;
+    border: 1px solid #ccc;
+
+    font-size: 14px;
+
+    outline: none;
+    background: #f9f9f9;
+
+    transition: all 0.25s ease;
+}
+
+.replica input:focus {
+    border-color: #0072ff;
+    background: #ffffff;
+    box-shadow: 0 0 0 2px rgba(0, 114, 255, 0.2);
+}
+
+/* Login Button */
+.replica button {
+    margin-top: 10px;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.replica button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 114, 255, 0.4);
+}
+
+.replica button:active {
+    transform: translateY(0);
+}
